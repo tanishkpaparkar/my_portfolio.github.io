@@ -1,0 +1,128 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#000,#1c3b5a);
+color:white;
+text-align:center;
+font-size:18px;
+}
+
+.tabs button{
+margin:12px;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#00c6ff;
+color:white;
+cursor:pointer;
+font-size:18px;
+transition:0.3s;
+}
+
+.section{display:none;padding:40px;}
+.active{display:block;}
+
+.grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+background:#111;
+padding:10px;
+border-radius:12px;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.skills-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.skills-grid img{
+width:90px;
+height:90px;
+object-fit:contain;
+}
+
+.edu{
+font-size:22px;
+line-height:1.7;
+}
+
+.profile{
+width:160px;
+border-radius:50%;
+}
+
+.cert{
+width:300px;
+margin:10px;
+}
+
+.tabs button:hover{
+transform:scale(1.1);
+}
+
+h2{
+font-size:32px;
+}
+
+
+/* smooth fade animation */
+.section{
+animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* button glow */
+.tabs button{
+box-shadow:0 0 10px rgba(0,198,255,0.5);
+}
+
+.tabs button:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px rgba(0,198,255,1);
+}
+
+/* card hover */
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* skills animation */
+.skills-grid img{
+transition:0.4s;
+}
+
+.skills-grid img:hover{
+transform:scale(1.2) rotate(5deg);
+}
+
+.skills-grid div{
+text-align:center;
+}
+
+.skills-grid p{
+margin-top:8px;
+font-weight:bold;
+}
